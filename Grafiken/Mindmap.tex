@@ -25,5 +25,12 @@
 
 % Lade Grafik als Mindmap, Neue Objekte werden im Kreis abgebildet, Grundfarbe jedes Objektes ist Rot 50%
 \begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=red!50, 
+    % 1. Ebene hat den Abstand 8cm und wird mit einem Winkel von 90°
+    level 1/.append style={level distance=8cm,sibling angle=90},
+    % 2. Ebene hat den Abstand 3cm und wird mit einem Winkel von 90°
+    level 2/.append style={level distance=3cm,sibling angle=90},
+    % 3. Ebene hat den Abstand 3cm und wird mit einem Winkel von 45°
+    level 3/.append style={level distance=3cm,sibling angle=45}]
+ 
     \end{tikzpicture}
 \end{document}
