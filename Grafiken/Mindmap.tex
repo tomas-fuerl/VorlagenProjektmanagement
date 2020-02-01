@@ -14,4 +14,16 @@
 \usepackage[T1]{fontenc}    
 \usepackage{tikz}
 
+% Library für Mindmaps nachladen
+\usetikzlibrary{mindmap}
+
+% Grafik auf Leere Seite plazieren
+\pagestyle{empty}
+
+% Beginn des Dokuments
+\begin{document}
+
+% Lade Grafik als Mindmap, Neue Objekte werden im Kreis abgebildet, Grundfarbe jedes Objektes ist Rot 50%
+\begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=red!50, 
+    \end{tikzpicture}
 \end{document}
