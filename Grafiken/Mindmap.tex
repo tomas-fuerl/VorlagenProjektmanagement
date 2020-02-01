@@ -32,5 +32,35 @@
     % 3. Ebene hat den Abstand 3cm und wird mit einem Winkel von 45°
     level 3/.append style={level distance=3cm,sibling angle=45}]
  
+    % Hier werden die Objekte und Unterobjekte eingebunden.
+    \node{Mindmaptitel}
+        % Ändere das Design des Einzelnen Objektes und seiner Unterobjekte
+        child [concept color=blue!30] { node {1.Ebene}
+            child { node {2.Ebene}}
+            child { node {2.Ebene}
+                child {node {3.Ebene}}
+                child {node {3.Ebene}}
+                child {node {3.Ebene}}
+                child {node {3.Ebene}
+                    child {node {3.Ebene}}
+                }
+            }
+        }
+        child [concept color=green!30] { node {1.Ebene}
+            child { node {2.Ebene}}
+            child { node {2.Ebene}}
+            child { node {2.Ebene}}
+        }   
+        child [concept color=yellow!30] { node {1.Ebene}
+            child { node {2.Ebene}}
+            child { node {2.Ebene}}
+            child { node {2.Ebene}}
+        }
+        child [concept color=red!30]{ node {1.Ebene}
+            child { node {2.Ebene}}
+            child { node {2.Ebene}}
+            child { node {2.Ebene}}
+        }
+    ;
     \end{tikzpicture}
 \end{document}
