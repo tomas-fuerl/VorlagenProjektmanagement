@@ -3,33 +3,29 @@
 % Das Lastenheft [...] beschreibt die Gesamtheit der Anforderungen des Auftraggebers an die 
 % Lieferungen und Leistungen eines Auftragnehmers.
 
-% Dokument im Artkelformat auf A4 mit Grundgröße 12pt
-\documentclass[a4paper, 12pt]{article}
-
-% Deutsche Formate der Funktionen
-\usepackage[ngerman]{babel}
-
-% Helvetica als Schriftart
-\usepackage[scaled]{helvet}
-\usepackage[T1]{fontenc}
-
-% Module nachladen
-\usepackage{tabu}
-
 % Deklaration der Variablen
-\newcommand{\Projektname}{Vorlagenprojekt}
-\title{Lastenheft \Projektname}
-\date{Erstellt am: \today}
 \author{Tomas Fürl}
-
+\title{Vorlagenprojekt}
+\newcommand{\Projektname}{Vorlagenprojekt}
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[german]{isodate}
+\usepackage[scaled]{helvet}
 \renewcommand\familydefault{\sfdefault}
 \begin{document}
-
+\pagenumbering{gobble}
+\maketitle
+\newpage
+\pagenumbering{Roman}
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+\pagenumbering{arabic}
 % Titelseite
-    \pagenumbering{gobble}
-    \maketitle
-    \newpage
-    \pagenumbering{arabic}
 
 % Projektbeschreibung
     \section{Projektbeschreibung}
