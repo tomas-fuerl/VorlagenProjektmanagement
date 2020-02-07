@@ -1,0 +1,69 @@
+
+% Dieses Dokument ist eine Vorlage zum Erstellen eines Anforderungskatalogs.
+
+% Deklaration der Variablen
+\author{Tomas Fürl}
+\newcommand{\Projektname}{Vorlagenprojekt}
+\title{Anforderungen für \Projektname}
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[german]{isodate}
+
+% Ändere Paragraph zu Überschrift 4
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\begin{document}
+
+% Titel, Inhaltsverzeichnis, Bildverzeichnis, Tabellenverzeichnis
+    \pagenumbering{gobble}
+    \maketitle
+    \newpage
+    \pagenumbering{Roman}
+    \tableofcontents
+    % \newpage
+    % \listoffigures
+    % \newpage
+    % \listoftables
+    \newpage
+    \pagenumbering{arabic}
+
+    \section{Funktionale Anforderungen}
+    \subsection{Kategorie}
+    \subsubsection{\textbf{Funktionstitel}}
+    \paragraph{Kurzbeschreibung}
+    \paragraph{Aktor}
+    \paragraph{Vorbedingungen}
+    \paragraph{Beschreibung des Ablaufs}
+    \paragraph{Auswirkungen}
+    \paragraph{Anmerkungen}
+
+    \section{Nicht-Funktionale Anforderungen}
+    \section{Listenbeispiel}
+    \begin{itemize}
+        \item One entry in the list
+        \item Another entry in the list
+    \end{itemize}
+    \begin{enumerate}
+        \item One entry in the list
+        \item Another entry in the list
+    \end{enumerate}
+    \section{Vorlage Anforderung}
+    \subsection{Kategorie}
+    \subsubsection{\textbf{Funktionstitel}}
+    \paragraph{Kurzbeschreibung}
+    \paragraph{Aktor}
+    \paragraph{Vorbedingungen}
+    \paragraph{Beschreibung des Ablaufs}
+    \paragraph{Auswirkungen}
+    \paragraph{Anmerkungen}
+
+\end{document}
