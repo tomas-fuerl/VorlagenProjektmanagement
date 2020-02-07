@@ -9,6 +9,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage[german]{isodate}
+\usepackage{tabularx}
 
 % Ändere Paragraph zu Überschrift 4
 \usepackage{titlesec}
@@ -65,5 +66,16 @@
     \paragraph{Beschreibung des Ablaufs}
     \paragraph{Auswirkungen}
     \paragraph{Anmerkungen}
+
+    \section{Tabellenbeispiel}
+    \begin{tabularx}{\textwidth}{l|X|c|r}
+        \textbf{Nr.} & \textbf{Beschreibung} & &\\
+      \hline
+      1. & Ich schreibe lange Texte, um meinen Standpunkt zu verdeutlicheStandpStandpunkt zu verdeutlichenunkt zu verdeutlichenn  & schrift  &  123 \\
+      \hline
+      2. & Ich schreibe lange Texte, um meinen Standpunkt zu verdeutlichen  & Schr  &   1234567 \\
+      3. & Ich schreibe lange Texte, um meinen Standpunkt   & Schriftift  &   12 \\
+      4. & Ich schreibe lange Texte, um meinen Standpunkt zu verdeutlichen  &   &   1234 \\
+      \end{tabularx}
 
 \end{document}
