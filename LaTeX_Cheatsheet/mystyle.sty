@@ -1,0 +1,34 @@
+\ProvidesPackage{mystyle}
+
+% Eigene Variable setzen
+\newcommand{\Projektname}{Vorlagenprojekt}
+
+% Native Variablen gesetzt
+\author{Tomas Fürl}
+\title{Cheatsheet für \Projektname}
+
+% Schriftsatz auf UTF8
+\usepackage[utf8]{inputenc}
+
+% Deutsche Lokalisierung
+\usepackage[german]{babel}
+\usepackage[german]{isodate}
+
+% Bibliothek für Tabellen
+\usepackage{tabularx}
+
+% Ändere Paragraph zu Überschrift 4
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% Schriftart aktualisieren zu Helvetica
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+% Bilder einbinden mit dem Pfad ./img/
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
