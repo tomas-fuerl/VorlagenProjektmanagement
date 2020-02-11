@@ -1,0 +1,67 @@
+% Dieses Dokument dient als Cheatsheet für verschiedene Technologien in LaTeX, die ich benutze.
+% Ich erhebe keinen Anspruch auf Vollständigkeit und Best Practices
+
+% Deklaration der Variablen
+\author{Tomas Fürl}
+\newcommand{\Projektname}{Vorlagenprojekt}
+\title{Anforderungen für \Projektname}
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[german]{isodate}
+\usepackage{tabularx}
+
+% Ändere Paragraph zu Überschrift 4
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\begin{document}
+% Titel, Inhaltsverzeichnis, Bildverzeichnis, Tabellenverzeichnis
+\pagenumbering{gobble}
+\maketitle
+\newpage
+\pagenumbering{Roman}
+\tableofcontents
+% \newpage
+% \listoffigures
+% \newpage
+% \listoftables
+\newpage
+\pagenumbering{arabic}
+
+% Liste
+\section{Listenbeispiel}
+    \begin{itemize}
+        \item One entry in the list
+        \item Another entry in the list
+    \end{itemize}
+    \begin{enumerate}
+        \item One entry in the list
+        \item Another entry in the list
+    \end{enumerate}
+
+% Tabelle
+\section{Tabellenbeispiel}
+    \begin{tabularx}{\textwidth}{|l|X|c|r|}
+        \hline
+        \textbf{Nr.} & \textbf{Beschreibung} & &\\
+        \hline
+        1. & Ich schreibe lange Texte, um meinen Standpunkt zu verdeutlicheStandpStandpunkt zu verdeutlichenunkt zu verdeutlichenn  & schrift  &  123 \\
+        \hline
+        2. & Ich schreibe lange Texte, um meinen Standpunkt zu verdeutlichen  & Schr  &   1234567 \\
+        \hline
+        3. & Ich schreibe lange Texte, um meinen Standpunkt   & Schriftift  &   12 \\
+        \hline
+        4. & Ich schreibe lange Texte, um meinen Standpunkt zu verdeutlichen  &   &   1234 \\
+        \hline
+    \end{tabularx}
+
+
+\end{document}
