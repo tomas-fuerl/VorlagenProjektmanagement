@@ -1,6 +1,6 @@
 % Dieses Dokument dient als Cheatsheet für verschiedene Technologien in LaTeX, die ich benutze.
 % Ich erhebe keinen Anspruch auf Vollständigkeit und Best Practices
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pt,a4paper]{report}
 
 \usepackage{mystyle}
 \usepackage{hyperref} 
@@ -16,6 +16,15 @@
 \listoftables
 \newpage
 \pagenumbering{arabic}
+
+% Beispiel aller Sektionierungsebenen
+\part{Teil}
+\chapter{Kapitelüberschift}
+\section{Teil}
+\subsection{Unterteil}
+\subsubsection{Unter-Unterteil}
+\paragraph{Paragraph}
+\subparagraph{Unterparagraph}
 
 % Listen-Datei einbinden
 \input{./content/listenbeispiel.tex}
