@@ -1,0 +1,20 @@
+// Kompilierte Dateien von LaTeX verstecken in VS-Code
+{
+    "files.exclude":{
+        "**/*.aux": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.fls": true,
+        "**/*.lot": true,
+        "**/*.lof": true,
+        "**/*.out": true,
+        "**/*.4ct": true,
+        "**/*.idv": true,
+        "**/*.lg": true,
+        "**/*.tmp": true,
+        "**/*.xdv": true,
+        "**/*.4tc": true,
+        "**/*.xref": true,
+        "**/*.synctex.gz": true,
+        "**/*.toc": true
+    }
+}
